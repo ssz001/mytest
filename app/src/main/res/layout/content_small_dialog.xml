@@ -8,7 +8,7 @@
    >
     <com.zhy.autolayout.AutoRelativeLayout
         android:id="@+id/aure_sma"
-        android:background="@color/color_grey"
+        android:background="@color/color_white"
         android:gravity="center"
         android:layout_width="400px"
         android:layout_height="500px">

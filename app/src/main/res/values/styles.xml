@@ -1,17 +1,28 @@
 <resources>
-
+<!--style是将属性集合起来，使得多个控件布局共用同一属性-->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--指定最底下导航栏-->
         <item name="android:navigationBarColor">@color/color_yellow</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--建立了 类activity ，在配置清单中配置style-->
+    <style name="smallactivity" parent="Theme.AppCompat">
+        <!--应该是选择需不需要actionbar-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景颜色-->
+        <item name="android:background">@color/main_color_black_50</item>
+        <!--是否半透明的-->
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

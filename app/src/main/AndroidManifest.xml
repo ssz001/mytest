@@ -28,17 +28,18 @@
             </intent-filter>
         </activity>
 
-        <!-- BaseActivity（抽象的BaseActivity）不能定义带这里 -->
+        <!-- BaseActivity（抽象的BaseActivity）不能定义带这里 （不用定义，中间桥梁）-->
         <!-- <activity -->
         <!-- android:name="fzz.ssz.mytest.Base.BaseActivity" -->
         <!-- android:label="@string/title_activity_base" -->
         <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
 
         <activity android:name=".JsonObjectActivity" />
+
         <activity
             android:name=".SmallDialogActivity"
             android:label="@string/title_activity_small_dialog"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/smallactivity"></activity>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -51,6 +52,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected int getLayoutId() {
+        Log.i("home_activity","onCreate");
         return R.layout.activity_home;
     }
 
@@ -94,6 +96,12 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     protected void setEvent() {
         btHome1.setOnClickListener(this);
         btHome4.setOnClickListener(this);
+        reflashMain1.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                reflashMain1.setRefreshing(false);//必须设置，不然刷新圆圈一直转圈圈
+            }
+        });
     }
 
     /**
@@ -103,9 +111,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
      */
     private void addTextViewName() {
 //        链式添加TextView名字
-        setRecycleViewTextViewName(str,"类dialogActivity");
+        setRecycleViewTextViewName(str,"JsonObject");
 //        链式添加类名
-        setRecycleViewName(list,"SmallDialogActivity");
+        setRecycleViewName(list,"JsonObjectActivity");
     }
 
 /**
@@ -114,7 +122,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
  * @time 2018/5/10 15:57
  */
     private void initInfo() {
-       setClassName("SmallDialogActivity");// 1
+        setClassName("SmallDialogActivity");// 1
         setClassName("JsonObjectActivity");// 2
 
         //指定i就可以选择启动哪一个activity
@@ -195,4 +203,40 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
           Intent intent = new Intent(this,c);
           startActivity(intent);
       }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("home_activity","onRestart");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("home_activity","onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("home_activity","onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("home_activity","onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("home_activity","onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("home_activity","onDestroy");
+    }
 }
