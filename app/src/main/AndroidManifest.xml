@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fzz.ssz.mytest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- autolayout申明 -->
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="My_test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- BaseActivity（抽象的BaseActivity）不能定义带这里 -->
+        <!-- <activity -->
+        <!-- android:name="fzz.ssz.mytest.Base.BaseActivity" -->
+        <!-- android:label="@string/title_activity_base" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+
+        <activity android:name=".JsonObjectActivity" />
+        <activity
+            android:name=".SmallDialogActivity"
+            android:label="@string/title_activity_small_dialog"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
