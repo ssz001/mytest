@@ -18,9 +18,7 @@
             android:name="design_height"
             android:value="1280" />
 
-        <activity
-            android:name=".HomeActivity"
-            android:label="My_test">
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +26,7 @@
             </intent-filter>
         </activity>
 
-        <!-- BaseActivity（抽象的BaseActivity）不能定义带这里 （不用定义，中间桥梁）-->
+        <!-- BaseActivity（抽象的BaseActivity）不能定义带这里 （不用定义，中间桥梁） -->
         <!-- <activity -->
         <!-- android:name="fzz.ssz.mytest.Base.BaseActivity" -->
         <!-- android:label="@string/title_activity_base" -->
@@ -36,10 +34,11 @@
 
         <activity android:name=".JsonObjectActivity" />
 
+        <!-- label 指定title名字 -->
         <activity
             android:name=".SmallDialogActivity"
             android:label="@string/title_activity_small_dialog"
-            android:theme="@style/smallactivity"></activity>
+            android:theme="@style/smallactivity" />
     </application>
 
 </manifest>

@@ -14,4 +14,5 @@
     <color name="color_green_home">#299b32</color>
     <color name="color_view">#ececec</color>
     <color name="main_color_black_50">#80b9b2b2</color>
+    <color name="color_textview">#aabdbfbc</color>
 </resources>
