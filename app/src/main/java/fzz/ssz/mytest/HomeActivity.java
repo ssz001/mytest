@@ -172,10 +172,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
      */
     private void addTextViewName() {
 //        链式添加TextView名字
-        setRecycleViewTextViewName(str,"JsonObject").add("类DialogActivity");
+        setRecycleViewTextViewName("JsonObject").setRecycleViewTextViewName("类DialogActivity").setRecycleViewTextViewName("ViewPaper");
 //        链式添加类名
-        setRecycleViewName("JsonObjectActivity").setRecycleViewName("SmallDialogActivity");
-
+        setRecycleViewName("JsonObjectActivity").setRecycleViewName("SmallDialogActivity").setRecycleViewName("ViewPaperActivity");
     }
 
 /**
@@ -213,14 +212,15 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
 //                     ClassTest();//测试MainActivity.class是否为反射
                  break;
                  case R.id.bt_home_4: //通用
-                     try {
-                          nextac = Class.forName(list_1.get(i));
-                     } catch (ClassNotFoundException e) {
-                          tvMainTitle1.setText("类名错误");
-                          e.printStackTrace();
-                     }
-                     Intent intent = new Intent(this,nextac);
-                     startActivity(intent);
+//                     try {
+//                          nextac = Class.forName(list_1.get(i));
+//                     } catch (ClassNotFoundException e) {
+//                          tvMainTitle1.setText("类名错误");
+//                          e.printStackTrace();
+//                     }
+//                     Intent intent = new Intent(this,nextac);
+//                     startActivity(intent);
+                     tvListen.setText(String.format("CNY %1$s",1112222222));
                      break;
                  case R.id.iv_menu_1:
                      drawer.openDrawer(GravityCompat.START);
@@ -243,9 +243,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     * @author 14206
     * @time 2018/5/10 14:52
     */
-   private List<String> setRecycleViewTextViewName(List<String> list,String str){
-       list.add(str);
-       return list;
+   private HomeActivity setRecycleViewTextViewName(String str1){
+       str.add(str1);
+       return this;
    }
 
 

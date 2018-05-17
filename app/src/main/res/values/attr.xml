@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewPaperIndicator">
+    <attr name="vpi_item_count" format="integer"/>
+        <attr name="never_choose_color" format="color"/>
+        <attr name="choose_color" format="color"/>
+    </declare-styleable>
+</resources>

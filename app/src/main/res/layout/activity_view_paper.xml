@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+<fzz.ssz.mytest.MySelfView.ViewPaperIndicator
+    android:id="@+id/viewpaper_indi"
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:orientation="horizontal"
+    android:background="@color/color_white"
+    app:never_choose_color="@color/color_forcous"
+    app:choose_color="@color/color_green"
+    app:vpi_item_count="4"
+    >
+</fzz.ssz.mytest.MySelfView.ViewPaperIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpaper_1"
+        android:layout_below="@+id/viewpaper_indi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

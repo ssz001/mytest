@@ -15,4 +15,7 @@
     <color name="color_view">#ececec</color>
     <color name="main_color_black_50">#80b9b2b2</color>
     <color name="color_textview">#aabdbfbc</color>
+    <color name="color_viewpaper">#28bb82</color>
+    <color name="color_forcous">#333333</color>
+
 </resources>

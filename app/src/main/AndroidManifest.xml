@@ -39,6 +39,11 @@
             android:name=".SmallDialogActivity"
             android:label="@string/title_activity_small_dialog"
             android:theme="@style/smallactivity" />
+        <activity android:name=".ViewPaperActivity" />
+        <activity
+            android:name=".BottomNavActivity"
+            android:label="@string/title_activity_bottom_nav"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
