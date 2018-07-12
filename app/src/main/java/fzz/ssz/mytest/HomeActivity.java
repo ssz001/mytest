@@ -177,11 +177,11 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         setRecycleViewName("JsonObjectActivity").setRecycleViewName("SmallDialogActivity").setRecycleViewName("ViewPaperActivity");
     }
 
-/**
- * 这里添加activity名字后，点击通用就可以启动相应的activity
- * @author 14206
- * @time 2018/5/10 15:57
- */
+   /**
+     *这里添加activity名字后，点击通用就可以启动相应的activity
+     * @author 14206
+     * @time 2018/5/10 15:57
+     */
     private void initInfo() {
         setClassName("SmallDialogActivity");// 1
         setClassName("JsonObjectActivity");// 2
@@ -228,11 +228,11 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     }
 
 
-/**
- * 添加Class类名
- * @author 14206
- * @time 2018/5/10 14:48
- */
+   /**
+     * 添加Class类名
+     * @author 14206
+     * @time 2018/5/10 14:48
+     */
    private HomeActivity setRecycleViewName(String str){
         list.add("fzz.ssz.mytest."+str);
         return this;
